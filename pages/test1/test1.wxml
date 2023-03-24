@@ -1,0 +1,6 @@
+<view wx:for="{{colorList}}" wx:key="id" class="test1" style="background-color:rgba({{item}})">
+  {{item}}  
+</view>
+
+
+

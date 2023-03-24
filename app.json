@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo/demo",
+    "pages/test1/test1"
+  ],
+  "subPackages": [{
+      "root": "pkgA",
+      "pages": [
+        "pages/cat/cat",
+        "pages/dog/dog"
+      ]
+    },
+    {
+      "root": "pkgB",
+      "pages": [
+        "pages/apple/apple"
+      ],
+      "independent": true
+    }
+  ],
+  "preloadRule": {
+    "pages/demo/demo": {
+      "network": "wifi",
+      "packages": ["pkgA"]
+    }
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#F0F8FF",
+    "navigationBarTitleText": "测试机",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [{
+        "pagePath": "pages/list/list",
+        "text": "首页",
+        "iconPath": "tabBarIcon/index.png",
+        "selectedIconPath": "tabBarIcon/index-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "个人信息页",
+        "iconPath": "tabBarIcon/heart.png",
+        "selectedIconPath": "tabBarIcon/heart-active.png"
+      },
+      {
+        "pagePath": "pages/demo/demo",
+        "text": "案例",
+        "iconPath": "tabBarIcon/demo.png",
+        "selectedIconPath": "tabBarIcon/demo-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  }
+}

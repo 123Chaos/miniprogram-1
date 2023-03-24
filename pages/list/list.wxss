@@ -1,0 +1,61 @@
+/* 导入外联样式表 */
+@import "../common/common.wxss";
+
+.container1 view {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container1 view:nth-child(1) {
+  background-color: aquamarine;
+}
+
+.container1 view:nth-child(2) {
+  background-color: lightpink;
+}
+
+.container1 view:nth-child(3) {
+  background-color: plum;
+}
+
+.container1 {
+  height: 200px;
+  width: 100px;
+  border: 1px  solid red;
+}
+
+.swiper-container {
+  height: 150px;
+}
+
+.item {
+  height: 100%;
+  line-height: 150px;
+  text-align: center;
+}
+
+swiper-item:nth-child(1) {
+  background-color: aqua;
+}
+
+swiper-item:nth-child(2) {
+  background-color: bisque;
+}
+
+swiper-item:nth-child(3) {
+  background-color: limegreen;
+}
+
+.btn {
+  background-color: antiquewhite;
+}
+
+input {
+  border: 1px solid red;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+}
+

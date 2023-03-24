@@ -1,0 +1,17 @@
+<swiper class="swiper-container" indicator-dots="true" autoplay="true" interval="3000" circular="true">
+  <swiper-item wx:for="{{swiper_list}}" wx:key="id">
+    <image src="{{item}}"/>
+  </swiper-item>
+</swiper>
+<!-- 九宫格制作方式 -->
+<view class="grid_container">
+  <view class="grid_view_container" wx:for="{{grid_list}}" wx:key="id">
+    <image src="{{item.img}}"/>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+<!-- delta默认为1 -->
+<!-- <navigator open-type="navigateBack">后退</navigator> -->
+<view class="bigbox">
+  
+</view>

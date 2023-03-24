@@ -1,0 +1,82 @@
+<!-- <scroll-view class="container1" scroll-y>
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</scroll-view> -->
+<!-- <swiper class="swiper-container" indicator-dots autoplay="true" interval="3000" circular="true">
+  <swiper-item>
+    <view class="item">A</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">B</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">C</view>
+  </swiper-item>
+</swiper> -->
+<!-- <text selectable="true">123</text>  -->
+<!-- <rich-text nodes="<h1 style='color:red;'>标题</h1>"/> -->
+<!-- 通过type指定按钮类型 -->
+<!-- <button>按钮</button>
+<button type="default">默认按钮</button>
+<button type="primary">主色调按钮</button>
+<button type="warn">警告按钮</button> -->
+<!-- 通过size="mini"设置小尺寸按钮 -->
+<!-- <button type="default" size="mini">默认按钮</button>
+<button type="primary" size="mini">主色调按钮</button>
+<button type="warn" size="mini">警告按钮</button> -->
+<!-- 通过plain设置镂空按钮 -->
+<!-- <button type="default" size="mini" plain>默认按钮</button>
+<button type="primary" size="mini" plain>主色调按钮</button>
+<button type="warn" size="mini" plain>警告按钮</button> -->
+<!-- <image src="./img/img1.png" class="yui" mode="aspectFit"/> -->
+<!-- <view>{{info}}</view> -->
+<!-- <button type="primary" bindtap="btnTapHandler">按钮</button> -->
+<!-- <button type="primary" bindtap="countChange">+1</button> -->
+<!-- <button type="primary" bindtap="btnTap2" data-info="{{2}}">+2</button> -->
+<!-- <input type="text" name="" id="" bindinput="inputHandler"/> -->
+<!-- <input type="text" value="{{msg}}" bindinput="iptHandler"/> -->
+<!-- <view wx:if="{{type == 1}}">男</view>
+<view wx:elif="{{type == -1}}">女</view>
+<view wx:else>保密</view>
+<button type="primary" bindtap="changeGender">切换性别</button> -->
+<!-- 一次性控制多个组件的展示和隐藏 -->
+<!-- <block wx:if="{{true}}">
+  <view>view1</view>
+  <view>view2</view>
+</block> -->
+<!-- 当需要频繁切换时，最好使用hidden，性能消耗小于wx:if。如果控制条件比较复杂，建议使用wx:if搭配wx:elif和wx:else进行控制 -->
+<!-- <view hidden="{{!flag}}">条件为true的时候隐藏元素，否则显示，通过切换样式实现</view>
+<view wx:if="{{flag}}">以动态创建和移除元素的方式，控制元素的展示与隐藏</view> -->
+<!-- <view wx:for="{{array1}}">
+  索引是：{{index}}，item项是：{{item}}
+</view> -->
+<!-- <view wx:for-index="idx" wx:for-item="itemName" wx:for="{{array1}}">
+  索引是：{{idx}}，item项是：{{itemName}}
+</view> -->
+<!-- <view wx:for="{{user_list}}" wx:key="id" class="username">
+  <text selectable="true">{{item.name}}</text>
+</view>    -->
+<!-- 403就是ip被挂了，可以换个api -->
+<!-- <button type="primary" bindtap="getInfo">发起GET请求</button> -->
+<!-- 跳转到tabBar页面需要指定open-type="switchTab" -->
+<!-- <navigator url="/pages/demo/demo" open-type="switchTab">press</navigator> -->
+<!-- 后退到上一级或者多级页面，需要指定open-type="navigateBack" 并且指定delta='n' n为后退层级 -->
+<!-- 跳转tabBar -->
+<!-- <button bindtap="gotodemo" type="primary">按钮</button> -->
+<!-- navigator路径后面可以携带参数，参数与路径间用?分隔，参数键与参数值之间用=链接，不同参数用&链接 -->
+<!-- <navigator url="/pages/logs/logs?id=value">跳转到demo,页面参数为value</navigator> -->
+<!-- <button type="primary">
+  <navigator url="/pages/test1/test1">测试样例一</navigator>
+</button> -->
+<!-- wxs使用方式 -->
+<!-- <view>
+  {{m1.toUpper(uname)}}
+</view>
+
+<wxs module="m1">
+  module.exports.toUpper = function(str) {
+    return str.toUpperCase()
+  }
+</wxs> -->
+
